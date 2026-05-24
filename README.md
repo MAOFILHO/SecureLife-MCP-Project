@@ -1,12 +1,8 @@
+# 🛡️ SecureLife Claims Processing Hub
 
----
-
-```markdown
-# SecureLife Claims Pipeline 📊
-
-An enterprise-grade, event-driven multi-agent automated claims adjudication system. This architecture leverages **LangGraph** for deterministic workflow orchestration, the **Model Context Protocol (MCP)** to cleanly decouple agent reasoning from core state-altering tool execution, and **Chainlit** for an interactive, real-time tracking interface.
-
-The pipeline securely handles input/output safety guardrailing, document validation heuristics, algorithmic fraud risk analysis scoring, LLM-based structured reasoning (`gpt-4o`), and automated database transactional audits.
+An asynchronous, distributed AI agent pipeline for processing insurance claims. This project uses a modern two-tier architecture:
+1. **Model Context Protocol (MCP) Server:** A remote data layer exposing SQLite database operations over `streamable_http`.
+2. **LangGraph + Chainlit Client:** A conversational UI powered by a LangGraph multi-agent workflow that sanitizes inputs, evaluates fraud, verifies documents, and logs immutable audits via the MCP server.
 
 ---
 
