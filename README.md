@@ -9,7 +9,7 @@ An asynchronous, distributed AI agent pipeline for processing insurance claims. 
 ## 📂 Project Structure
 
 ```text
-securelife_claims_pipeline/
+SecureLife-MCP-Project/
 │
 ├── securelife_client_app/
 │   ├── __init__.py
@@ -117,8 +117,8 @@ class AgentState(TypedDict):
 Clone the workspace repository and navigate to the project root directory:
 
 ```bash
-git clone [https://github.com/MAOFILHO/securelife_claims_pipeline.git](https://github.com/MAOFILHO/securelife_claims_pipeline.git)
-cd securelife_claims_pipeline
+git clone [https://github.com/MAOFILHO/SecureLife-MCP-Project.git](https://github.com/MAOFILHO/SecureLife-MCP-Project.git)
+cd SecureLife-MCP-Project
 
 ```
 
