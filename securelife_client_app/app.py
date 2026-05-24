@@ -1,6 +1,6 @@
 import re
+import json
 import chainlit as cl
-#from .agent import claims_agent
 from securelife_client_app.agent import claims_agent
 
 # Regex to isolate Claim IDs out of any raw textual input
@@ -74,7 +74,17 @@ async def on_message(message: cl.Message):
 > {reason}
 """
     
+    # Set up native Chainlit text elements for the collapsible drawer array
+    elements = []
     if audit.get("audit_logged"):
-        response_markdown += f"\n\n<details><summary><b>View Database Transaction Logs</b></summary>\n\n```json\n{audit}\n```\n</details>"
+        pretty_audit_logs = json.dumps(audit, indent=2)
+        elements.append(
+            cl.Text(
+                name="View Database Transaction Logs",
+                content=pretty_audit_logs,
+                language="json",
+                display="inline"
+            )
+        )
 
-    await cl.Message(content=response_markdown).send()
+    await cl.Message(content=response_markdown, elements=elements).send()
