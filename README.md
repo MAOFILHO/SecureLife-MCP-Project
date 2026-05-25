@@ -164,20 +164,20 @@ To operate the end-to-end framework ecosystem, both the decentralized tools laye
 
 ### Step A: Initialize the Model Context Protocol (MCP) Server
 
-In a separate terminal window (with your virtual environment active), start your local resource provider or database orchestration layer:
+On the primary terminal window (with your virtual environment active), start your local resource provider or database orchestration layer:
 
 ```bash
 # Example running command layout (Adjust depending on server execution script)
-python3 main.py
+python -m securelife_mcp_server.server
 
 ```
 
 ### Step B: Launch the Chainlit UI Client Interface
 
-In your primary terminal workspace, spin up the front-facing user application:
+Open a separate terminal workspace, spin up the front-facing user application:
 
 ```bash
-chainlit run securelife_client_app/app.py -w
+python -m chainlit run securelife_client_app/app.py -w
 
 ```
 
@@ -189,7 +189,7 @@ Type a query containing an active claim code pattern match inside the client cha
 
 > *"Please run an automated check on file reference CLM-2025-0001 with high urgency."*
 
-The system regex compiler will automatically isolate `CLM-2025-0001`, invoke the underlying LangGraph loop, append the secure database metrics audit trail, and render an interactive collapsible JSON viewer natively in the UI window.
+The system regex compiler will automatically isolate `CLM-2025-0001`, invoke the underlying LangGraph loop, append the secure database metrics audit trail, and render an interactive, collapsible JSON viewer natively in the UI window.
 
 ```
 ***
