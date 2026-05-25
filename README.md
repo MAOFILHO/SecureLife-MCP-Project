@@ -168,6 +168,8 @@ On the primary terminal window (with your virtual environment active), start you
 
 ```bash
 # Example running command layout (Adjust depending on server execution script)
+
+<img width="1088" height="989" alt="Screenshot 2026-05-25 at 11 51 27 AM" src="https://github.com/user-attachments/assets/6546d581-e360-4fd6-88f1-43494b06cfb4" />
 python -m securelife_mcp_server.server
 
 ```
@@ -190,6 +192,8 @@ Type a query containing an active claim code pattern match inside the client cha
 > *"Please run an automated check on file reference CLM-2025-0001 with high urgency."*
 
 The system regex compiler will automatically isolate `CLM-2025-0001`, invoke the underlying LangGraph loop, append the secure database metrics audit trail, and render an interactive, collapsible JSON viewer natively in the UI window.
+
+<img width="1088" height="989" alt="Screenshot 2026-05-25 at 11 51 27 AM" src="https://github.com/user-attachments/assets/dda35ea7-314b-41c0-b935-de51a70b89ab" />
 
 ```
 ***
