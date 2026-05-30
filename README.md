@@ -170,6 +170,7 @@ On the primary terminal window (with your virtual environment active), start you
 # Example running command layout (Adjust depending on server execution script)
 
 <img width="1088" height="989" alt="Screenshot 2026-05-25 at 11 51 27 AM" src="https://github.com/user-attachments/assets/6546d581-e360-4fd6-88f1-43494b06cfb4" />
+
 python -m securelife_mcp_server.server
 
 ```
