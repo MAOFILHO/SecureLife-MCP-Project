@@ -18,6 +18,9 @@ SecureLife-MCP-Project/
 │   ├── client_wrapper.py   # Model Context Protocol (MCP) client connection handling
 │   └── guardrails.py       # Input/Output validation and content safety layers
 │
+├── securelife_mcp_server/
+|   ├── server.py 
+|
 ├── SecureLife_claims.db    # Live SQLite database tracking claims records & audit logs
 ├── .gitignore              # Explicitly ignores secrets (.env), environments (venv/), and binary junk
 ├── README.md               # Master system documentation manual
