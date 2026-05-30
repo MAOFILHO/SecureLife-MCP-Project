@@ -108,7 +108,7 @@ class AgentState(TypedDict):
 
 ### Prerequisites
 
-* macOS (Tested on MacBook Air architecture) or Linux Host (Ubuntu 24.04/26.04)
+* macOS (Tested on MacBook Air architecture) or Linux Host (Ubuntu 24.04)
 * Python 3.12 or higher
 * Valid OpenAI API Private Secret Key
 
