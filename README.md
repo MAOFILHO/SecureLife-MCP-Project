@@ -169,15 +169,18 @@ On the primary terminal window (with your virtual environment active), start you
 ```bash
 # Example running command layout (Adjust depending on server execution script)
 
-<img width="1088" height="989" alt="Screenshot 2026-05-25 at 11 51 27 AM" src="https://github.com/user-attachments/assets/6546d581-e360-4fd6-88f1-43494b06cfb4" />
-
-python -m securelife_mcp_server.server
+python -m securelife_mcp_server.server or
+python securelife_mcp_server/server.py
 
 ```
+<img width="949" height="200" alt="Screenshot 2026-05-30 at 1 20 47 PM" src="https://github.com/user-attachments/assets/5be24507-16a8-47a5-b9ef-b7ee654dc9b2" />
+
 
 ### Step B: Launch the Chainlit UI Client Interface
 
 Open a separate terminal workspace, spin up the front-facing user application:
+
+Go to the project root: cd /SecureLife-MCP-Project
 
 ```bash
 python -m chainlit run securelife_client_app/app.py -w
@@ -185,6 +188,9 @@ python -m chainlit run securelife_client_app/app.py -w
 ```
 
 The interface will automatically deploy in your default web browser at `http://localhost:8000`.
+
+<img width="947" height="199" alt="Screenshot 2026-05-30 at 1 21 30 PM" src="https://github.com/user-attachments/assets/0bf21654-159d-45f9-bf08-94888293cd90" />
+
 
 ### Step C: Execute a Test Evaluation Pipeline
 
@@ -198,16 +204,5 @@ The system regex compiler will automatically isolate `CLM-2025-0001`, invoke the
 
 ```
 ***
-
-### How to apply this immediately:
-1. Open your terminal on your Mac and type: `nano README.md`
-2. Clear out any existing text.
-3. Paste the markdown block above inside the editor.
-4. Save and exit (`Ctrl + O`, `Enter`, `Ctrl + X`).
-5. Run your final push commands:
-   ```bash
-   git add README.md
-   git commit -m "Update README.md with complete project directory schema"
-   git push origin main
 
 ```
