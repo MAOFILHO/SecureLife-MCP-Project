@@ -127,8 +127,9 @@ cd SecureLife-MCP-Project
 Create and activate an isolated Python runtime environment:
 
 ```bash
+brew install python3.12
 python3.12 -m venv venv
-source venv/bin/activate
+source .venv/bin/activate
 
 ```
 
