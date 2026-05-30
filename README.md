@@ -19,7 +19,7 @@ SecureLife-MCP-Project/
 │   └── guardrails.py       # Input/Output validation and content safety layers
 │
 ├── securelife_mcp_server/
-|   ├── server.py 
+|   ├── server.py           # FastAPI / MCP Server using Streamable HTTP
 |
 ├── SecureLife_claims.db    # Live SQLite database tracking claims records & audit logs
 ├── .gitignore              # Explicitly ignores secrets (.env), environments (venv/), and binary junk
